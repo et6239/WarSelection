@@ -1,0 +1,99 @@
+Design Document for War Selection
+-------------------
+first person shooter
+
+2000 multiple guns
+	pistol (p2000)
+	2000 AUG (assult rifle)
+	1999 rocket launcher
+	1998 minigun
+	1997 sniper rifle (m24)
+	1996 burst fire sniper rifle (Headsploder)
+	1995 m4 (assult rifle)
+	1900 glock 18
+	1800 gernade launcher
+	1700 trip mines
+
+1801 gernades
+	1801 explosive
+	sticky
+	flash
+	smoke
+	mass-sheep-spawning-gernades
+	insect-swarm-gernades
+	moltov cocktails
+
+1994 melee weapons
+	throwing knives
+	basic knife
+	sword - bronze sword, silver sword, steel sword, magic sword, rusty sword, light-sword
+	knife that shoots a bullet
+	gunblade
+	poison dagger
+	lightsabre
+	
+gameplay feature
+	1799 kill score
+	1798 kill streaks
+	2002 shooting and killing
+	2001 respawn
+	1600 AI opponents
+	3000 PvP (multiplayer)
+	ammo for guns
+	eating food and drinking beverages
+	chests (with stuff in them, weapons, ammo, spells, food, ...)
+	recoil for guns (make them less accurate as you shoot more)
+	aim improves as you arent shooting
+
+effects
+	hungry
+	starving
+	poisoning
+	bleeding
+	
+
+AI opponents
+	wandering chickens
+	air whales that try to swallow you
+	other players
+	bandits
+	
+
+stats
+	hp - health
+	mp
+	att
+	def
+	dex
+	wis
+	vit - regeneration
+	spd
+
+classes
+	rogue
+		invisiblity
+		back stab
+		speed boost
+	warrior
+		lots of hitpoints
+		berzerk - double strength, double hp, sets fire to everything he walks on
+		gunzerking - dual guns, take less damage, regenerate ammo
+	mystics
+		spells
+	flyer
+		fly
+	sniper
+		uses sniper rifles
+		no recoil
+
+1000 spells (have cooldowns)
+	poison
+	healing
+	teleport
+	summoning
+	create box
+	jump high
+	fireball
+	lighting bolt
+	laser beam
+	
