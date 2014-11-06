@@ -39,27 +39,66 @@ gameplay feature
 	2001 respawn
 	1600 AI opponents
 	3000 PvP (multiplayer)
-	ammo for guns
-	eating food and drinking beverages
-	chests (with stuff in them, weapons, ammo, spells, food, ...)
-	recoil for guns (make them less accurate as you shoot more)
-	aim improves as you arent shooting
+	1000 ammo for guns
+	1250 eating food and drinking beverages
+	500 chests (with stuff in them, weapons, ammo, spells, food, ...)
+	999 recoil for guns (make them less accurate as you shoot more)
+	998 aim improves as you arent shooting
+	5000 menus
+		5000 main menu
+			login/logout
+			Account
+			options
+			help
+			Single Player
+				Play vs. Bots
+				Story Mode
+			Multi Player
+				Play With Friends
+				Connect to Public Server (servers run by other players)
+				Connect to Reccomended Server (standard server)
+		pause menu
+			resume game
+			options
+			play options
+				Single player**
+				Multi Player**
+			help
+			quit
+		options
+			sound volume
+			controls
+		help
+			credits
+			how-to-play
+			guides <-- link to webpage
+			youtube <-- link to youtube videos about this game
+			command list
+				Admins
+				Players
+				Mixed
 
-effects
+	2999 commands (from a command prompt or chat)
+		give
+		stats
+		xp
+		lvl
+
+997 effects
 	hungry
 	starving
 	poisoning
 	bleeding
 	
 
-AI opponents
+1600 AI opponents
 	wandering chickens
 	air whales that try to swallow you
 	other players
 	bandits
 	
 
-stats
+2998 stats
 	hp - health
 	mp
 	att
@@ -69,7 +108,7 @@ stats
 	vit - regeneration
 	spd
 
-classes
+1300 classes
 	rogue
 		invisiblity
 		back stab
