@@ -100,6 +100,7 @@ gameplay feature
 
 2998 stats
 	hp - health
+	stamina - for sprinting and attacks and jumps (all physical activity)
 	mp
 	att
 	def
