@@ -15,6 +15,14 @@ public class PlayerStats : MonoBehaviour {
 			float totalImageWidth = bar.rectTransform.sizeDelta.x;
 			float pixelsPerUnit = totalImageWidth / max;
 			current += adjustment;
+			if (current > max) 
+			{
+				current = max;
+			}
+			if (current < 0) 
+			{
+				current = 0;
+			}
 			text.text = name+": " + current + " / " + max;
 			Vector2 pos = bar.rectTransform.anchoredPosition;
 			pos.x = (current - max) * pixelsPerUnit;
@@ -25,9 +33,9 @@ public class PlayerStats : MonoBehaviour {
 	public StatWithBar hitpoints;
 
 	/// for sprinting and attacks and jumps (all physical activity)
-	public float stamina;
+	public StatWithBar stamina;
 	/// magic points
-	public float mp;
+	public StatWithBar mp;
 	/// attack score
 	public float att;
 	/// defense score
@@ -44,6 +52,8 @@ public class PlayerStats : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		hitpoints.adjust (0);
+		stamina.adjust (0);
+		mp.adjust (0);
 	}
 
 	// Update is called once per frame
