@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerStats : MonoBehaviour {
 	/// health
-	public float hp;
+	public float hp = 7, maxhp = 10;
 	/// for sprinting and attacks and jumps (all physical activity)
 	public float stamina;
 	/// magic points
