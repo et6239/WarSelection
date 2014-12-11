@@ -43,6 +43,7 @@ public class PlayerStats : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		hitpoints.adjust (0);
 	}
 
 	// Update is called once per frame
