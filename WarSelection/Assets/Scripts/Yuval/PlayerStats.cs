@@ -11,7 +11,7 @@ public class PlayerStats : MonoBehaviour {
 		public UnityEngine.UI.Image bar;
 		public UnityEngine.UI.Text text;
 
-		public void adjust(int adjustment) {
+		public void adjust(float adjustment) {
 			float totalImageWidth = bar.rectTransform.sizeDelta.x;
 			float pixelsPerUnit = totalImageWidth / max;
 			current += adjustment;
@@ -23,7 +23,7 @@ public class PlayerStats : MonoBehaviour {
 			{
 				current = 0;
 			}
-			text.text = name+": " + current + " / " + max;
+			text.text = name+": " + (int)current + " / " + max;
 			Vector2 pos = bar.rectTransform.anchoredPosition;
 			pos.x = (current - max) * pixelsPerUnit;
 			bar.rectTransform.anchoredPosition = pos;
