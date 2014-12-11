@@ -28,5 +28,9 @@ public class Sprint : MonoBehaviour {
 		} else {
 			ps.stamina.adjust(+Time.deltaTime);
 		}
+
+		if (ps.stamina.current == 0) {
+			cm.movement.maxForwardSpeed = oldMoveSpeed;		
+		}
 	}
 }
