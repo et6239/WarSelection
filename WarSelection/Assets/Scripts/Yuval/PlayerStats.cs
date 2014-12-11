@@ -3,11 +3,26 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour {
-	/// health
-	public float hp = 10, maxhp = 10;
 
-	public UnityEngine.UI.Image hpBar;
-	public UnityEngine.UI.Text hpText;
+	[System.Serializable]
+	public class StatWithBar {
+		public string name;
+		public float current, max;
+		public UnityEngine.UI.Image bar;
+		public UnityEngine.UI.Text text;
+
+		public void adjust(int adjustment) {
+			float totalImageWidth = bar.rectTransform.sizeDelta.x;
+			float pixelsPerUnit = totalImageWidth / max;
+			current += adjustment;
+			text.text = name+": " + current + " / " + max;
+			Vector2 pos = bar.rectTransform.anchoredPosition;
+			pos.x = (current - max) * pixelsPerUnit;
+			bar.rectTransform.anchoredPosition = pos;
+		}
+	}
+
+	public StatWithBar hitpoints;
 
 	/// for sprinting and attacks and jumps (all physical activity)
 	public float stamina;
@@ -30,23 +45,13 @@ public class PlayerStats : MonoBehaviour {
 	void Start () {
 	}
 
-	void addHP(int hpAdjustment) {
-		float totalImageWidth = hpBar.rectTransform.sizeDelta.x;
-		float pixelsPerUnit = totalImageWidth / maxhp;
-		hp += hpAdjustment;
-		hpText.text = "HP: " + hp + " / " + maxhp;
-		Vector2 pos = hpBar.rectTransform.anchoredPosition;
-		pos.x = (hp - maxhp) * pixelsPerUnit;
-		hpBar.rectTransform.anchoredPosition = pos;
-	}
-
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.F)) {
-			addHP(-1);
+			hitpoints.adjust(-1);
 		}
 		if(Input.GetKeyDown(KeyCode.G)) {
-			addHP(+1);
+			hitpoints.adjust(+1);
 		}
 	}
 }
