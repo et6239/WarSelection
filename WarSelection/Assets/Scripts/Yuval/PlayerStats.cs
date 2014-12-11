@@ -31,10 +31,12 @@ public class PlayerStats : MonoBehaviour {
 	}
 
 	void addHP(int hpAdjustment) {
+		float totalImageWidth = hpBar.rectTransform.sizeDelta.x;
+		float pixelsPerUnit = totalImageWidth / maxhp;
 		hp += hpAdjustment;
-		hpText.text = "Current HP: " + hp;
+		hpText.text = "HP: " + hp + " / " + maxhp;
 		Vector2 pos = hpBar.rectTransform.anchoredPosition;
-		pos.x = hp - maxhp;//hp + healthBarStart - maxhp;
+		pos.x = (hp - maxhp) * pixelsPerUnit;
 		hpBar.rectTransform.anchoredPosition = pos;
 	}
 
