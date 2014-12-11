@@ -24,10 +24,8 @@ public class Sprint : MonoBehaviour {
 			cm.movement.maxForwardSpeed = oldMoveSpeed;
 		}
 		if(Input.GetKey(KeyCode.LeftShift)) {
-			print ("-");
 			ps.stamina.adjust(-Time.deltaTime);
 		} else {
-			print ("+");
 			ps.stamina.adjust(+Time.deltaTime);
 		}
 	}
