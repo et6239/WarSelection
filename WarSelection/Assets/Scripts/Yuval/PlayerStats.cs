@@ -8,7 +8,6 @@ public class PlayerStats : MonoBehaviour {
 
 	public UnityEngine.UI.Image hpBar;
 	public UnityEngine.UI.Text hpText;
-	float healthBarStart;
 
 	/// for sprinting and attacks and jumps (all physical activity)
 	public float stamina;
@@ -29,7 +28,6 @@ public class PlayerStats : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		healthBarStart = 0;// hpBar.rectTransform.anchoredPosition.x;
 	}
 
 	void addHP(int hpAdjustment) {
