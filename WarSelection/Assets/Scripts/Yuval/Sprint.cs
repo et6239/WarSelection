@@ -23,14 +23,16 @@ public class Sprint : MonoBehaviour {
 		if(Input.GetKeyUp(KeyCode.LeftShift)) {
 			cm.movement.maxForwardSpeed = oldMoveSpeed;
 		}
-		if(Input.GetKey(KeyCode.LeftShift)) {
-			ps.stamina.adjust(-Time.deltaTime);
-		} else {
-			ps.stamina.adjust(+Time.deltaTime);
-		}
+		if(ps != null) {
+			if(Input.GetKey(KeyCode.LeftShift)) {
+				ps.stamina.adjust(-Time.deltaTime);
+			} else {
+				ps.stamina.adjust(+Time.deltaTime);
+			}
 
-		if (ps.stamina.current == 0) {
-			cm.movement.maxForwardSpeed = oldMoveSpeed;		
+			if (ps.stamina.current == 0) {
+				cm.movement.maxForwardSpeed = oldMoveSpeed;		
+			}
 		}
 	}
 }
