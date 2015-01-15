@@ -12,8 +12,7 @@ public class MyAnimationStateController : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Escape)) {
 			Animator a = GetComponent<Animator>();
-			a.SetTrigger("pausemenu");
-			print ("HEY!!!");
+			a.SetTrigger("pausebutton");
 		}
 	}
 }
