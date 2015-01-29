@@ -8,7 +8,7 @@ public class MyAnimationStateController : MonoBehaviour {
 	public bool triggerOnStart = true;
 	public List<GameObject> thingsToToggle;
 
-	void ToggleUI() {
+	public void ToggleUI() {
 		Animator a = GetComponent<Animator>();
 		a.SetTrigger(triggerName);
 		if(thingsToToggle != null) {
