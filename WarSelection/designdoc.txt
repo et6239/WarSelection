@@ -49,7 +49,20 @@ gameplay feature
 			login/logout
 			Account
 			options
+				Keyboard and Mouse
+					LClick:	Use Weapon/Object Being Held
+					RClick:	Use Special Power
+					Space:	Jump
+					W:	Go Forward
+					S:	Go Backwards
+					A:	Strafe Left
+					D:	Strafe Right
+					LShift:	Sprint
+					Ctrl:	Crouch
+				Audio Options
 			help
+				How To Play
+					[Play Guide]
 			Single Player
 				Play vs. Bots
 				Story Mode
