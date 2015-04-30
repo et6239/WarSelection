@@ -8,7 +8,7 @@ public class CubeMove : MonoBehaviour {
 
 	void Awake()
 	{
-		if (!networkView.isMine)
+		if (!GetComponent<NetworkView>().isMine)
 			enabled = false;
 	}
 
@@ -19,7 +19,7 @@ public class CubeMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (networkView.isMine)
+		if (GetComponent<NetworkView>().isMine)
 		{
 			Vector3 moveDir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 			float speed = 5;

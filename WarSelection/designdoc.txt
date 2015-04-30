@@ -26,11 +26,8 @@ first person shooter
 1994 melee weapons
 	throwing knives
 	basic knife
-	sword - bronze sword, silver sword, steel sword, magic sword, rusty sword, light-sword
-	knife that shoots a bullet
+	sword
 	gunblade
-	poison dagger
-	lightsabre
 	
 gameplay feature
 	1799 kill score
